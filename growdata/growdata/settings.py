@@ -1,3 +1,6 @@
+# Make this file more generic
+# Test
+
 """
 Django settings for growdata project.
 
