@@ -1,2 +1,2 @@
-﻿Set-Location "C:\Users\nspie\Documents\projects\grow_automation"
+﻿Set-Location "PATH_TO_PROJECT"
 .\growdata-python-venv\Scripts\Activate.ps1
