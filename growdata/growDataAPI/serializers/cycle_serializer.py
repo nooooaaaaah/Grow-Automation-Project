@@ -5,10 +5,10 @@ from growDataAPI.models import Cycle
 from growDataAPI.serializers.tent_serializer import TentSerializer
 
 class CycleSerializer(serializers.HyperlinkedModelSerializer):
-    tent_set = TentSerializer(many=True)
     class Meta:
+        tent_set = TentSerializer(many=True)
         model = Cycle
-        fields = ('name', 'id', 'tent_set')
+        fields = ('id', 'name', 'tent_set')
 
 
         

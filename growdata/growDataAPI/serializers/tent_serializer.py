@@ -1,8 +1,10 @@
 from rest_framework import serializers
 
 from growDataAPI.models import Tent
+from growDataAPI.models import Cycle
 
 class TentSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Tent
-        fields = ('name', 'id', 'lightModel', 'numOfLights', 'lightOn', 'lightOff')
+        cycle = Cycle
+        fields = ('id', 'name', 'cycle', 'lightWatts', 'numOfLights')
