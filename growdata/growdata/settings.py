@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'growDataAPI.apps.GrowdataapiConfig',
-    'rest_framework'
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

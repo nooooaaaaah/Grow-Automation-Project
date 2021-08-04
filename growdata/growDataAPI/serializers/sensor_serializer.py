@@ -5,4 +5,4 @@ from growDataAPI.models import Sensor
 class SensorSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Sensor
-        fields = ('name', 'id', 'plant', 'tent')
+        fields = ('id', 'name', 'plant', 'tent')
