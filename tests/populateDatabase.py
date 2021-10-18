@@ -28,7 +28,8 @@ def creatingFakeData(numOfFakeCycles, numOfFakeTents, numOfFakePlants, numOfFake
             counter = 1 #used for names of tents
             tentName = "Tent" + str(counter) #creates tent name
             requests.post(tentAPI, data= {'name': tentName, 'cycle': cycleURL, 'lightWatts': 600, 'numOfLights': 1}) #Adds tents to the cycle that was just created
-            #tentURL = tentAPI + 
+            tentURL = tentAPI + tentName + '/'
+            print(tentURL)
             ++counter
 
         #requests.post(plantAPI, data= {})
@@ -38,10 +39,10 @@ def creatingFakeData(numOfFakeCycles, numOfFakeTents, numOfFakePlants, numOfFake
 
 
 def main():
-    numOfCycles = int(input("How many Cycles do you want to make?"))
-    numOfTents = int(input("How many Tents do you wanna make?"))
-    numOfPlants = int(input("How many Plants do you wanna make?"))
-    numOfSensors = int(input("How many Sensors do you wanna make?"))
+    numOfCycles = int(input("How many Cycles do you want to make?: "))
+    numOfTents = int(input("How many Tents do you wanna make?: "))
+    numOfPlants = int(input("How many Plants do you wanna make?: "))
+    numOfSensors = int(input("How many Sensors do you wanna make?: "))
 
     creatingFakeData(numOfCycles, numOfTents, numOfPlants, numOfSensors)
 
